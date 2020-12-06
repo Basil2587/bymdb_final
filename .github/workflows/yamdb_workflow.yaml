@@ -47,14 +47,14 @@ jobs:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
-          host: 130.193.56.229
-          username: admin
+          host: 84.201.148.248
+          username: basil
           port: 22
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker pull praktikum/yamdb
+            sudo docker pull basil087/yamdb_final
             sudo docker stop $(docker ps -a -q)
-            sudo docker run --rm -d -p 5000:5000 praktikum/yamdb
+            sudo docker run --rm -d -p 5000:5000 basil087/yamdb_final
 
   send_message:
     runs-on: ubuntu-latest
