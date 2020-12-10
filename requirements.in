@@ -2,5 +2,6 @@ pytest-django
 requests
 django
 djangorestframework
-djangorestframework-simplejwt
 django-filter
+djangorestframework_simplejwt
+drf-nested-routers
