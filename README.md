@@ -99,21 +99,21 @@ python manage.py loaddata fixtures.json
 
 **POST /auth/token/** - получение JWT-токена в обмен на email и confirmation_code  
 Запрос:  
-Ключ|Значение|Описание
-----|--------|--------
+| Ключ |Значение|Описание|
+| :--- |:------:|-------:|
 email|"string"|адрес эл.почты
 confirmation_code|"string"|код подтверждения
 
 **PATCH /users/me/** - изменить данные своей учетной записи  
 Запрос:  
-Ключ|Значение|Описание
-----|--------|--------
-"first_name"|"string"|Имя
-"last_name"|"string"|Фамилия
-"username"|"string"|Username
-"bio"|"string"|О себе
-"email"|"string"|Адрес электронной почты
-"role"|"string"| Enum: "user" "moderator" "admin"  
+| Ключ |Значение|Описание|
+| :--- |:------:|-------:|
+|"first_name"|"string"|Имя|
+|"last_name"|"string"|Фамилия|
+|"username"|"string"|Username|
+|"bio"|"string"|О себе|
+|"email"|"string"|Адрес электронной почты|
+|"role"|"string"| Enum: "user" "moderator" "admin"|  
 
 Ответ (200):
 Ключ|Значение|Описание
