@@ -75,19 +75,19 @@ python manage.py loaddata fixtures.json
 ## Несколько примеров использования API
 **GET /titles/** - получить список всех произведений  
 Ответ (200):  
-Ключ|Значение|Описание
-----|--------|--------
-"id"|number|ID произведения
-"name"|"string"|Название
-"year"|number|Год выпуска
-"rating"|number|Рейтинг на основе отзывов
-"description"|"string"|Описание
-"genre"|Array of objects|Жанр
-||"name"|Название жанра
-||"slug"|Поле "slug" 
-"category"|objects|Категория
-||"name"|Название категории объекта
-||"slug"|Поле "slug" 
+|Ключ|Значение|Описание|
+|----|--------|--------|
+|"id"|number|ID произведения|
+|"name"|"string"|Название|
+|"year"|number|Год выпуска|
+|"rating"|number|Рейтинг на основе отзывов|
+|"description"|"string"|Описание|
+|"genre"|Array of objects|Жанр|
+||"name"|Название жанра|
+||"slug"|Поле "slug" |
+|"category"|objects|Категория|
+||"name"|Название категории объекта|
+||"slug"|Поле "slug" |
   
 **POST /auth/email/** - передача confirmation_code на адрес эл.почты  
 Запрос:  
@@ -101,8 +101,8 @@ python manage.py loaddata fixtures.json
 Запрос:  
 | Ключ |Значение|Описание|
 | :--- |:------:|-------:|
-email|"string"|адрес эл.почты
-confirmation_code|"string"|код подтверждения
+|email|"string"|адрес эл.почты|
+|confirmation_code|"string"|код подтверждения|
 
 **PATCH /users/me/** - изменить данные своей учетной записи  
 Запрос:  
@@ -116,14 +116,14 @@ confirmation_code|"string"|код подтверждения
 |"role"|"string"| Enum: "user" "moderator" "admin"|  
 
 Ответ (200):
-Ключ|Значение|Описание
-----|--------|--------
-"first_name"|"string"|Имя
-"last_name"|"string"|Фамилия
-"username"|"string"|Username
-"bio"|"string"|О себе
-"email"|"string"|Адрес электронной почты
-"role"|"string"| Enum: "user" "moderator" "admin"  
+|Ключ|Значение|Описание|
+|----|--------|--------|
+|"first_name"|"string"|Имя|
+|"last_name"|"string"|Фамилия|
+|"username"|"string"|Username|
+|"bio"|"string"|О себе|
+|"email"|"string"|Адрес электронной почты|
+|"role"|"string"| Enum: "user" "moderator" "admin"|  
 
 
 __**Более подробную информацию о методах данного API можно получить по адресу http://localhost:8000/redoc/**__
