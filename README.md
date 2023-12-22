@@ -1,8 +1,5 @@
-# yamdb_final
-yamdb_final
-![yamdb_workflow Action Status](https://github.com/DariaKalinichenko/yamdb_final/workflows/yamdb_workflow/badge.svg)
-# Проект "YaMDb"
-Проект "**YaMDb**" — база отзывов пользователей о фильмах, книгах и музыке.  
+# Проект "ByMDb"
+Проект "**ByMDb**" — база отзывов пользователей о фильмах, книгах и музыке.  
 Задача проекта - создание API для организации доступа к базе отзывов о фильмах, книгах и музыке.  
 
 С помощью API, можно получить доступ к следующим ресурсам:
